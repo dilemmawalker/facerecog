@@ -7,8 +7,9 @@
 // const stub = ClarifaiStub.json();
 // // const stub = ClarifaiStub.insecureGrpc();
 
-function move(props,prop2){
-console.log(props,prop2)
+function move(props){
+    return(
+<img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQutQFAxeieCO2sG5UdP4mBJ4CqxykTuf9u5w&usqp=CAU" />);   
 // stub.PostModelOutputs(
 //     {
 //         model_id: "{THE_MODEL_ID}",
@@ -36,11 +37,12 @@ function Imagelinkform(){
     return(
         <div>
                 <input id='aa' type="text" style={{width:"400px"}} class={{}} 
-                onChange={
-                   (i)=> move2(i)
-                } /><br></br><br></br>
+                // onChange={
+                //    (i)=> move2(i)
+                // }
+                /><br></br><br></br>
                 <button onClick={
-                 ()=>  move('const','fuck')
+                 ()=>  move(document.getElementById('aa').value)
                 }>detect</button>
         </div>
     );
