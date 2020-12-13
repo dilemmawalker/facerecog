@@ -1,6 +1,8 @@
 // import {ClarifaiStub} from "clarifai-nodejs-grpc";
 // import  grpc  from "@grpc/grpc-js";
 
+import Facerecognition from "./Facerecognition";
+
 // const metadata = new grpc.Metadata();
 // metadata.set("authorization", "Key {a7a00e98572c4cb0bf7a7801956393a7}");
 
@@ -30,7 +32,7 @@ function move(props){
 function move2(prop){
     return(
         console.log(prop.target.value)
-    );
+   );
 }
 
 function Imagelinkform(){
@@ -42,7 +44,7 @@ function Imagelinkform(){
                 // }
                 /><br></br><br></br>
                 <button onClick={
-                 ()=>  move(document.getElementById('aa').value)
+                 ()=>  Facerecognition(document.getElementById('aa').value)
                 }>detect</button>
         </div>
     );

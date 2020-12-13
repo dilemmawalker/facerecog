@@ -1,4 +1,4 @@
-// import 'tachyons';
+import 'tachyons';
 function Navigation (){
     return(
 <div>

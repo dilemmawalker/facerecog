@@ -1,7 +1,7 @@
-function Facerecognition(){
+function Facerecognition({props}){
 return(
     <div>
-        <img class='paaa' src="https://samples.clarifai.com/metro-north.jpg"></img>
+        <img class='paaa' src= {props}></img>
     </div>
 );
 }
